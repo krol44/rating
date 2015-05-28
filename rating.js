@@ -95,7 +95,7 @@
 
 					if(self.opt.half === 'yes' && num === +rate) {
 
-						if(event.pageX-$(elementEvent).offset().left<=imgWidth) {
+						if(eventCallback.pageX-$(elementEvent).offset().left<=imgWidth) {
 							self.arrayStar[key] = self.opt.starHalf;
 
 							self.score = rateHalf;
