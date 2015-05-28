@@ -1,4 +1,5 @@
-
+### start
+```html
 $('#rating').rating({
 	title: ['Хуже не бывает', 'Ужасно', 'Очень плохо', 'Плохо', 'Более-менее', 'Нормально', 'Хорошо', 'Отлично', 'Великолепно', 'Шедевр!'],
 	click: function(d) {
@@ -11,8 +12,10 @@ $('#rating').rating({
 		console.log('mouseOut', d);
 	}
 });
+```
 
-
+### setting
+```html
 quantity: 5,
 half: 'yes',
 starOn: '/external/img/star-on.png',
@@ -26,3 +29,4 @@ title: ['Masterpiece!', 'Great', 'Very Good', 'Good', 'Fine', 'Average', 'Bad', 
 click: function(){},
 move: function(){},
 mouseOut: function(){}
+```
