@@ -25,7 +25,7 @@ starHalf: '/external/img/star-half.png',
 starHalfSet: '/external/img/star-half-set.png',
 setScore: undefined,
 lock: 'no',
-title: ['Masterpiece!', 'Great', 'Very Good', 'Good', 'Fine', 'Average', 'Bad', 'Very Bad', 'Horrible', 'Appalling'],
+title: ['Appalling', 'Horrible', 'Very Bad', 'Bad', 'Average', 'Fine', 'Good', 'Very Good', 'Great', 'Masterpiece!'],
 click: function(){},
 move: function(){},
 mouseOut: function(){}
