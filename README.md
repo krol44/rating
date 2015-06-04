@@ -10,7 +10,10 @@ $('#rating').rating({
 	},
 	mouseOut: function(d) {
 		console.log('mouseOut', d);
-	}
+	},
+	loaded: function(d) {
+    	console.log('loaded', d);
+    }
 });
 ```
 
@@ -28,5 +31,6 @@ lock: 'no',
 title: ['Appalling', 'Horrible', 'Very Bad', 'Bad', 'Average', 'Fine', 'Good', 'Very Good', 'Great', 'Masterpiece!'],
 click: function(){},
 move: function(){},
-mouseOut: function(){}
+mouseOut: function(){},
+loaded: function(){}
 ```

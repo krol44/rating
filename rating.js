@@ -1,4 +1,4 @@
-// ver 0.1
+// ver 0.2
 // author krol44.com
 
 (function($) {
@@ -17,7 +17,8 @@
 		title: ['Appalling', 'Horrible', 'Very Bad', 'Bad', 'Average', 'Fine', 'Good', 'Very Good', 'Great', 'Masterpiece!'],
 		click: function(){},
 		move: function(){},
-		mouseOut: function(){}
+		mouseOut: function(){},
+		loaded: function(){}
 	};
 
 	var methods = {
@@ -78,6 +79,8 @@
 				self.score = self.opt.setScore;
 				methods.save(self);
 				methods.handlerMouse(self, '', '');
+
+				self.opt.loaded({score: self.score, title: self.opt.title[self.data('score')]});
 			}
 
 		},
@@ -94,7 +97,6 @@
 				if(num <= rate && (eventCallback.type === 'mousemove' || eventCallback.type === 'click')) {
 
 					if(self.opt.half === 'yes' && num === +rate) {
-
 						if(eventCallback.pageX-$(elementEvent).offset().left<=imgWidth) {
 							self.arrayStar[key] = self.opt.starHalf;
 
