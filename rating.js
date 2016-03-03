@@ -80,6 +80,10 @@
 				methods.save(self);
 				methods.handlerMouse(self, '', '');
 
+				if (self.opt.lock == 'yes') {
+					self.elm.css('cursor', 'auto');
+				}
+
 				self.opt.loaded({score: self.score, title: self.opt.title[self.data('score')]});
 			}
 
