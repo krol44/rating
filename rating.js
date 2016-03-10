@@ -1,4 +1,4 @@
-// ver 0.4
+// ver 0.5
 // author krol44.com
 
 (function($) {
@@ -50,9 +50,6 @@
 					if (self.opt.lock == 'yes') {
 						return;
 					}
-					if ($(self).data('score')) {
-						return;
-					}
 
 					methods.handlerMouse(self, event, this);
 
@@ -67,9 +64,6 @@
 
 				img.on('click', function(event) {
 					if (self.opt.lock == 'yes') {
-						return;
-					}
-					if ($(self).data('score')) {
 						return;
 					}
 
