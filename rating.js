@@ -1,4 +1,4 @@
-// ver 0.3
+// ver 0.4
 // author krol44.com
 
 (function($) {
@@ -47,8 +47,12 @@
 				self.arrayStar.push(this.opt.starOff);
 
 				img.on('mousemove', function (event) {
-					if($(self).data('score') && self.opt.lock=='yes')
+					if (self.opt.lock == 'yes') {
 						return;
+					}
+					if ($(self).data('score')) {
+						return;
+					}
 
 					methods.handlerMouse(self, event, this);
 
@@ -62,8 +66,12 @@
 				});
 
 				img.on('click', function(event) {
-					if($(self).data('score') && self.opt.lock=='yes')
+					if (self.opt.lock == 'yes') {
 						return;
+					}
+					if ($(self).data('score')) {
+						return;
+					}
 
 					methods.handlerMouse(self, event, this);
 
@@ -80,13 +88,12 @@
 				methods.save(self);
 				methods.handlerMouse(self, '', '');
 
-				if (self.opt.lock == 'yes') {
-					self.elm.css('cursor', 'auto');
-				}
-
 				self.opt.loaded({score: self.score, title: self.opt.title[self.data('score')]});
 			}
 
+			if (self.opt.lock == 'yes') {
+				self.elm.css('cursor', 'auto');
+			}
 		},
 
 		handlerMouse : function(self, eventCallback, elementEvent) {
