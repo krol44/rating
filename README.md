@@ -1,5 +1,5 @@
 ### start
-```html
+```js
 $('#rating').rating({
 	title: ['Хуже не бывает', 'Ужасно', 'Очень плохо', 'Плохо', 'Более-менее', 'Нормально', 'Хорошо', 'Отлично', 'Великолепно', 'Шедевр!'],
 	click: function(d) {
@@ -18,7 +18,7 @@ $('#rating').rating({
 ```
 
 ### setting
-```html
+```js
 quantity: 5,
 half: 'yes',
 starOn: '/external/img/star-on.png',
