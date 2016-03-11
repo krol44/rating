@@ -1,3 +1,5 @@
+demo - <a href="http://krol44.com/rating/index.html">http://krol44.com/rating/index.html</a>
+
 ### start
 ```js
 $('#rating').rating({
